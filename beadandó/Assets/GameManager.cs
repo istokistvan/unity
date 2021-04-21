@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public void Complete()
     {
         End.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         textBox.text = timer.ToString()+" Sec";
     }
 
